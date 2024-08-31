@@ -1,0 +1,55 @@
+.TH CRETEM 1 "August 2024" "Version 1.0" "CRETEM MANUAL"
+.SH NAME
+cretem \- A utility to create template files for Java, C++, and C programs.
+.SH SYNOPSIS
+.B cretem
+[\fB\-j \fIFILENAME\fR] [\fB\-p \fIFILENAME\fR] [\fB\-c \fIFILENAME\fR]
+.SH DESCRIPTION
+The \fBcretem\fR command creates template files for Java, C++, and C programs, based on the option provided. The created file is automatically opened in the \fBvi\fR editor for editing.
+.PP
+If the wrong number of arguments or an incorrect option is provided, the script will display usage instructions and refer to this man page.
+.SH OPTIONS
+.TP
+\fB\-j \fIFILENAME\fR
+Create a Java template file with the specified \fIFILENAME\fR and open it in \fBvi\fR.
+.TP
+\fB\-p \fIFILENAME\fR
+Create a C++ template file with the specified \fIFILENAME\fR and open it in \fBvi\fR.
+.TP
+\fB\-c \fIFILENAME\fR
+Create a C template file with the specified \fIFILENAME\fR and open it in \fBvi\fR.
+.TP
+\fB\?\fR
+Show usage instructions and refer to this man page.
+.SH USAGE
+.TP
+To create a Java file template:
+.B cretem \-j MyClass
+.TP
+To create a C++ file template:
+.B cretem \-p MyProgram
+.TP
+To create a C file template:
+.B cretem \-c MyCProgram
+.TP
+If incorrect options or no options are provided:
+.B cretem
+.SH EXIT STATUS
+The \fBcretem\fR command exits with a status of 0 if the command was successful. If an error occurs, it exits with a status greater than 0.
+.SH EXAMPLES
+Create a Java file named \fIMyClass.java\fR:
+.B cretem \-j MyClass
+.PP
+Create a C++ file named \fIMyProgram.cpp\fR:
+.B cretem \-p MyProgram
+.PP
+Create a C file named \fIMyCProgram.c\fR:
+.B cretem \-c MyCProgram
+.SH AUTHOR
+Written by Neeraj Manivarnan.
+.SH BUGS
+No known bugs. Please report any bugs to neerajmanivarnan@gmail.com.
+.SH SEE ALSO
+.B bash(1)
+
+
